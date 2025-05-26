@@ -1,0 +1,13 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: apache-camel-with-flux
+  namespace: flux-system
+spec:
+  interval: 5m0s
+  ref:
+    branch: main
+  url: https://github.com/kshitij-tripathi/apache-camel-with-flux.git
+  secretRef:
+    name: git-credentials
