@@ -3,6 +3,7 @@ kind: IntegrationPlatform
 metadata:
   labels:
     app: camel-k
+  namespace: camel-k
   name: camel-k
 spec:
   build:
