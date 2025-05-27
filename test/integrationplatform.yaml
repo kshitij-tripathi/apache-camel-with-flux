@@ -5,8 +5,8 @@ metadata:
   namespace: camel-k
 spec:
   build:
-    publishStrategy: Spectrum
-    registry:
-      address: docker.io
-      #organization:   # or leave empty for anonymous
-      insecure: true
+    strategy: routine
+    # registry:
+    #   address: docker.io
+    #   #organization:   # or leave empty for anonymous
+    #   insecure: true
