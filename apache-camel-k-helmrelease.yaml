@@ -1,0 +1,23 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: camel-k
+  namespace: camel-k
+spec:
+  interval: 5m
+  chart:
+    spec:
+      chart: camel-k
+      sourceRef:
+        kind: HelmRepository
+        name: camel-k
+        namespace: flux-system
+      version: "2.6.0"
+  # values:
+  #   platform:
+  #     build:
+  #       registry:
+  #         address: "docker.io"
+  #         organization: "your-dockerhub-username"
+  #         insecure: false
+  #       publishStrategy: "Spectrum"
