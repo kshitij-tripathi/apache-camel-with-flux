@@ -12,3 +12,4 @@ spec:
           .to('log:info')
       name: hello.groovy
       language: groovy
+      
