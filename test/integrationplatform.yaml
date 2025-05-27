@@ -8,5 +8,5 @@ spec:
     publishStrategy: Spectrum
     registry:
       address: docker.io
-      organization:   # or leave empty for anonymous
+      #organization:   # or leave empty for anonymous
       insecure: true
