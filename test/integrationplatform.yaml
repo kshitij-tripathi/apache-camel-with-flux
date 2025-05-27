@@ -7,7 +7,6 @@ metadata:
   name: camel-k
 spec:
   build:
-    baseImage: eclipse-temurin:17
     registry:
-      address: kshitijtripathi/camel-k
+      address: docker.io
       secret: registry
