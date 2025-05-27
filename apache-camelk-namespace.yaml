@@ -1,0 +1,8 @@
+# Name space for Apache camel-k
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: camel-k
+  labels:
+    name: camel-k
