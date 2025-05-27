@@ -6,10 +6,9 @@ metadata:
 spec:
   sources:
     - content: |
-        from('timer:tick?period=5000')
+        from("timer:tick")
           .setBody()
-          .simple('Hello from Camel K!')
-          .to('log:info')
-      name: hello.groovy
-      language: groovy
-      
+            .constant("Hello from Camel K!")
+          .log("${body}")
+      name: Hello.java
+      language: java
