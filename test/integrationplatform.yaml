@@ -3,4 +3,4 @@ kind: IntegrationPlatform
 metadata:
   name: camel-k
   namespace: camel-k
-spec: {}
+spec:
