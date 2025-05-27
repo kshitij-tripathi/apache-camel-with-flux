@@ -5,7 +5,8 @@ metadata:
   namespace: camel-k
 spec:
   build:
+    publishStrategy: Spectrum
     registry:
-      address: "docker.io"
+      address: docker.io
+      organization:   # or leave empty for anonymous
       insecure: true
-      skipPush: true  # this avoids pushing to remote registries
